@@ -1,11 +1,21 @@
-import { Button } from "@/components/Button/Button";
+import { Header } from "@/components/Header/Header";
+import { Footer } from "@/components/Footer/Footer";
+import { Card } from "@/components/Card/Card";
 
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <Button />
-    </div>
+    <>
+      <Header />
+      <main className="main">
+        <section className="hero">
+          <h2 className="hero__title">Seja bem-vindo</h2>
+          <div className="hero__content">
+            <Card />
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 }
 
